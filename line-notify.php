@@ -8,21 +8,16 @@
     $email = $_POST['email'];
 
     $message = $header.
-                "\n". "ชื่อจริง: " . $firstname .
-                "\n". "นามสกุล: " . $lastname .
-                "\n". "เบอร์โทรศัพท์: " . $phone .
-                "\n". "อีเมล์: " . $email;
+                "\n". "ชื่อจริง: " . $firstname;
 
     if (isset($_POST["submit"])) {
         if ( $firstname <> "" ||  $lastname <> "" ||  $phone <> "" ||  $email <> "" ) {
             sendlinemesg();
-            header('Content-Type: text/html; charset=utf8');
+          
             $res = notify_message($message);
-            echo "<script>alert('สมัครสมาชิกเรียบร้อย');</script>";
-            header("location: index.php");
+          
         } else {
-            echo "<script>alert('กรุณากรอกข้อมูลให้ครบถ้วน');</script>";
-            header("location: index.php");
+            
         }
     }
 
