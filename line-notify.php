@@ -30,7 +30,7 @@
 		// LINE LINE_API https://notify-api.line.me/api/notify
 		// LINE TOKEN mhIYaeEr9u3YUfSH1u7h9a9GlIx3Ry6TlHtfVxn1bEu แนะนำให้ใช้ของตัวเองนะครับเพราะของผมยกเลิกแล้วไม่สามารถใช้ได้
         define('LINE_API',"https://notify-api.line.me/api/notify");
-        define('LINE_TOKEN',"mhIYaeEr9u3YUfSH1u7h9a9GlIx3Ry6TlHtfVxn1bEu");
+        define('LINE_TOKEN',"rwHEtj1TyUMegZ5sJdDYCxBfTk0INwpKGxz6HVACxN5");
 
         function notify_message($message) {
             $queryData = array('message' => $message);
